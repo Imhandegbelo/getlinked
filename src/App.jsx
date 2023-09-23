@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="max-w-[1440px]">
       <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route path='/' exact element={<Home/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/contact' element={<Contact/>} />
       </Routes>
