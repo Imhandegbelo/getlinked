@@ -13,8 +13,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="pt-6 pb-2 border-b border-b-slate-700">
-      <div className="flex justify-between px-10 sm:px-12 md:px-16 max-w-[1440px] mx-auto">
+    <nav className="pt-6 pb-2 border-b border-purple-700/40">
+      <div className="flex justify-between px-10 sm:px-12 md:px-16 lg:px-24 xl:px-36">
         <h1 className="text-white text-base md:text-3xl lg:text-4xl font-bold">
           get<span className="text-[#D434FE]">linked</span>
         </h1>
@@ -28,7 +28,7 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button title={"Register"} />
+          <Button title={"Register"} link={true} />
 
           {/* <button className="border-0 bg-transparent md:hidden">
             <svg
