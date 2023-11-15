@@ -1,5 +1,5 @@
 import star_p from "../assets/star_p.png";
-import star_g from "../assets/star_g.png";
+import star_pi from "../assets/star_pi.png";
 import big_idea from "../assets/the big idea 1.png";
 
 export default function Introduction() {
@@ -10,9 +10,14 @@ export default function Introduction() {
     >
       <div className="w-full md:w-1/2">
         <img src={big_idea} alt="big idea image" className="" />
+        <img
+        src={star_pi}
+        alt="twinkling star"
+        className="w-5 h-6 md:w-6 md:h-6 animate-[pulse_1s_infinite] absolute top-[40%] left-10x"
+      />
       </div>
       <div className="flex flex-col text-center md:text-left items-center text-white w-full md:w-1/2">
-        <div className="relative mb-1 md:mb-4 lg:mb-10">
+        <div className="relative ml-0 mb-1 md:mb-4 lg:mb-10 w-full">
           <h3 className="text-xl md:text-2xl lg:text-3xl md:text-[2rem] font-bold">
             Introduction to getlinked <br />
             <span className="text-[#D434FE]">techHackathon 1.0</span>
@@ -20,7 +25,7 @@ export default function Introduction() {
           <img
             src={star_p}
             alt="purple star"
-            className="w-5 h-5 absolute right-2 animate-[ping_1s_infinite] duration-300"
+            className="w-5 h-5 absolute top-1/2 right-2 animate-[ping_1s_infinite] duration-300"
           />
         </div>
         <p className="text-[13px] md:text-sm leading-[27.5px]">
@@ -32,11 +37,11 @@ export default function Introduction() {
           change the world, that's what we're all about!
         </p>
       </div>
-      <img
+      {/* <img
         src={star_g}
         alt="twinkling star"
         className="w-5 h-6 animate-[pulse_1s_infinite] duration-300 absolute top-1/2 left-10"
-      />
+      /> */}
     </section>
   );
 }

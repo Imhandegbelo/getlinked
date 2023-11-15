@@ -21,7 +21,7 @@ export default function Criteria() {
         <img
           src={star_w}
           alt="white twinkling star"
-          className="w-5 h-5 hidden md:absolute bottom-0 right-0 animate-[ping_1s_infinite]"
+          className="w-5 h-5 hidden md:block absolute bottom-0 right-0 animate-[ping_1s_infinite]"
         />
         <img
           src={star_g}
