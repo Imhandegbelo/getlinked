@@ -18,7 +18,7 @@ export default function Introduction() {
       </div>
       <div className="flex flex-col text-center md:text-left items-center text-white w-full md:w-1/2">
         <div className="relative ml-0 mb-1 md:mb-4 lg:mb-10 w-full">
-          <h3 className="text-xl md:text-2xl lg:text-3xl md:text-[2rem] font-bold">
+          <h3 className="font-clash+display text-xl md:text-2xl lg:text-3xl md:text-[2rem] font-bold">
             Introduction to getlinked <br />
             <span className="text-[#D434FE]">techHackathon 1.0</span>
           </h3>

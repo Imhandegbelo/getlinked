@@ -31,7 +31,7 @@ export default function Criteria() {
         {/* Ellipse behind */}
       </div>
       <div className="w-full md:w-1/2 text-center md:text-left">
-        <div className="text-xl md:text-2xl lg:text-[2rem] lg:leading-[2.1rem] mb-4 font-bold">
+        <div className="font-clash+display text-xl md:text-2xl lg:text-[2rem] lg:leading-[2.1rem] mb-4 font-bold">
           <h3>
             Judging Criteria <br />
             <span className="text-[#D434FE]">Key attributes</span>

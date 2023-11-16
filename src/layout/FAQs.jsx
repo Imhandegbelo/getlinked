@@ -13,7 +13,7 @@ export default function FAQs() {
       className="flex flex-col md:flex-row gap-24 md:gap-6 items-center py-24 px-9 sm:px-12 md:px-16 lg:px-24 xl:px-36 border-b border-purple-700/30"
     >
       <div className="grid gap-3 xl:gap-5 w-full md:w-2/5 relative">
-        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold">
+        <h3 className="font-clash+display text-xl md:text-2xl lg:text-3xl font-bold">
           Frequently Asked <br />{" "}
           <span className="text-[#D434FE]">Questions</span>
         </h3>

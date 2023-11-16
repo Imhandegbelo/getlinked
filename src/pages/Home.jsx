@@ -5,6 +5,7 @@ import Criteria from "../layout/Criteria";
 import FAQs from "../layout/FAQs";
 import Prizes from "../layout/Prizes";
 import Hero from "../layout/Hero";
+import Partners from "../layout/Partners";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Criteria />
       <FAQs />
       <Prizes />
+      <Partners />
     </main>
   );
 };

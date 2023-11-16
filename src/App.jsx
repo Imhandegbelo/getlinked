@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-[#150E28]">
+    <div className="font-Montserrat bg-[#150E28]">
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
