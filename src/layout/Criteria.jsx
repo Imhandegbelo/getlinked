@@ -2,7 +2,7 @@ import tech_talk from "../assets/tech-talk.png";
 import star_w from "../assets/star_w.png";
 import star_g from "../assets/star_g.png";
 import star_p from "../assets/star_p.png";
-import ellipse from "../assets/ellipse.png";
+import ellipse from "../assets/Ellipse.png";
 import Button from "../components/Button";
 
 export default function Criteria() {
