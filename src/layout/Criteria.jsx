@@ -9,7 +9,7 @@ export default function Criteria() {
   return (
     <section
       id="criteria"
-      className="flex flex-col md:flex-row items-center gap-10 py-12 px-9 md:px-12 lg:px-24 xl:px-36 border-b border-purple-700/30 relative"
+      className="flex flex-col md:flex-row items-center gap-10 pt-12 pb-20 px-9 md:px-12 lg:px-24 xl:px-36 border-b border-purple-700/30 relative"
     >
       <div className="w-full md:w-1/2 relative z-50">
         <img

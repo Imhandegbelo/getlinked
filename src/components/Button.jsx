@@ -7,11 +7,11 @@ export default function Button({ title, link }) {
       {link === true ? (
         <Link
           to={"/register"}
-          className="p-px rounded bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9]"
+          className="flex justify-center items-center w-fit p-px rounded bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9]"
         >
-          <div className="rounded bg-slate-800">
+          <div className="rounded mb-[0.1rem]v mt-[0.1rem] bg-[#150E28]">
             <button
-              className={`text-white py-3 px-7 text-white font-bold rounded bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9] hover:bg-none focus:bg-none`}
+              className={`text-white py-2 px-7 text-white font-bold rounded bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9] hover:bg-none focus:bg-none`}
             >
               {title}
             </button>
@@ -19,11 +19,11 @@ export default function Button({ title, link }) {
         </Link>
       ) : (
         <div
-          className="p-px w-fit rounded bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9]"
+          className="flex justify-center items-center w-fit p-px rounded bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9]"
         >
-          <div className="rounded bg-slate-800">
+          <div className="rounded mb-[0.1rem] mt-[0.1rem] bg-[#150E28]">
             <button
-              className={`text-white py-3 px-7 text-white font-bold rounded bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9] hover:bg-none focus:bg-none`}
+              className={`text-white py-2 px-7 text-white font-bold rounded bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9] hover:bg-none focus:bg-none`}
             >
               {title}
             </button>

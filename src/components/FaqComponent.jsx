@@ -7,7 +7,7 @@ export default function FaqComponent() {
   return (
     <>
       {faq_data.map((single_data, index) => (
-        <div className="w-full border-b border-[#D434FE] text-sm my-2c">
+        <div key={`faq-${index+1}`} className="w-full border-b border-[#D434FE] text-sm my-2c">
           <div className="flex items-center justify-between">
             <p>{single_data.question}</p>
             <button
