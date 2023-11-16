@@ -1,9 +1,9 @@
-import thinking_man from "../assets/thinking-man.png";
-import question_mark from "../assets/question-mark.svg";
-import star_p from "../assets/star_p.png";
-import star_g from "../assets/star_g.png";
-import star_w from "../assets/star_w.png";
-import star_pi from "../assets/star_pi.png";
+import thinking_man from "../assets/images/thinking-man.png";
+import question_mark from "../assets/svgs/question-mark.svg";
+import star_p from "../assets/images/star_p.png";
+import star_g from "../assets/images/star_g.png";
+import star_w from "../assets/images/star_w.png";
+import star_pi from "../assets/images/star_pi.png";
 import FaqComponent from "../components/FaqComponent";
 
 export default function FAQs() {

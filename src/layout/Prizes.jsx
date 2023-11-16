@@ -1,8 +1,8 @@
-import success_target from "../assets/success-target.png";
+import success_target from "../assets/images/success-target.png";
 import Rewards from "../components/Rewards";
-import star_w from "../assets/star_w.png";
-import star_p from "../assets/star_p.png";
-import star_g from "../assets/star_g.png";
+import star_w from "../assets/images/star_w.png";
+import star_p from "../assets/images/star_p.png";
+import star_g from "../assets/images/star_g.png";
 
 export default function Prizes() {
   return (

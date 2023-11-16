@@ -1,6 +1,6 @@
-import star_p from "../assets/star_p.png";
-import star_pi from "../assets/star_pi.png";
-import big_idea from "../assets/big-idea.png";
+import star_p from "../assets/images/star_p.png";
+import star_pi from "../assets/images/star_pi.png";
+import big_idea from "../assets/images/big-idea.png";
 
 export default function Introduction() {
   return (

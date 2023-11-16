@@ -1,5 +1,5 @@
 import React, { lazy } from "react";
-import designer from "../assets/3d-designer.png";
+import designer from "../assets/images/3d-designer.png";
 import SuccessComponent from "../components/SuccessComponent";
 
 const Register = () => {

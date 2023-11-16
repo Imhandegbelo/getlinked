@@ -1,8 +1,8 @@
-import star_w from "../assets/star_w.png";
-import star_g from "../assets/star_g.png";
-import pink_line from "../assets/pink-line.svg";
-import man_glasses from "../assets/man_glasses.png";
-import starry_globe from "../assets/starry-globe.png";
+import star_w from "../assets/images/star_w.png";
+import star_g from "../assets/images/star_g.png";
+import pink_line from "../assets/svgs/pink-line.svg";
+import man_glasses from "../assets/images/man_glasses.png";
+import starry_globe from "../assets/images/starry-globe.png";
 import Button from "../components/Button";
 import Timer from "../components/Timer";
 

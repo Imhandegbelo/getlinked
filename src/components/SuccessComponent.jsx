@@ -1,5 +1,5 @@
 import React from "react";
-import congrats from "../assets/congratulation.png";
+import congrats from "../assets/images/congratulation.png";
 
 const SuccessComponent = () => {
   return (

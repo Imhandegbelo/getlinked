@@ -1,6 +1,6 @@
-import gold_medal from "../assets/medal_gold.png";
-import silver_medal from "../assets/medal_silver.png";
-import bronze_medal from "../assets/medal_bronze.png";
+import gold_medal from "../assets/images/medal_gold.png";
+import silver_medal from "../assets/images/medal_silver.png";
+import bronze_medal from "../assets/images/medal_bronze.png";
 
 export default function Rewards() {
   const prizes = [

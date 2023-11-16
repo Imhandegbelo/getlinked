@@ -1,7 +1,7 @@
-import photo_rules from "../assets/photo_rules.png";
-import star_w from "../assets/star_w.png";
-import star_g from "../assets/star_g.png";
-import star_p from "../assets/star_p.png";
+import photo_rules from "../assets/images/photo_rules.png";
+import star_w from "../assets/images/star_w.png";
+import star_g from "../assets/images/star_g.png";
+import star_p from "../assets/images/star_p.png";
 
 export default function Rules() {
   return (
