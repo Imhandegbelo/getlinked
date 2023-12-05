@@ -8,13 +8,16 @@ export default function Introduction() {
       id="introduction"
       className="flex flex-col md:flex-row items-center py-10 border-b border-purple-700/30 gap-16 px-9 sm:px-10 md:px-12 lg:px-24 xl:px-36 relative"
     >
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2 relative">
         <img src={big_idea} alt="big idea image" className="" />
+        <p className="absolute top-[48%] left-[45%] text-xl xl:text-2xl w-[2rem] xl:w-[3.6rem]">
+          The Big Idea!
+        </p>
         <img
-        src={star_pi}
-        alt="twinkling star"
-        className="w-5 h-6 md:w-6 md:h-6 animate-[pulse_1s_infinite] absolute top-[40%] left-10x"
-      />
+          src={star_pi}
+          alt="twinkling star"
+          className="w-5 h-6 md:w-6 md:h-6 animate-[pulse_1s_infinite] absolute top-[40%] left-10x"
+        />
       </div>
       <div className="flex flex-col text-center md:text-left items-center text-white w-full md:w-1/2">
         <div className="relative ml-0 mb-1 md:mb-4 lg:mb-10 w-full">

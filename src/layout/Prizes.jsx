@@ -8,7 +8,7 @@ export default function Prizes() {
   return (
     <section
       id="prizes"
-      className="py-24 text-white px-9 sm:px-12 md:px-16 lg:px-24 xl:px-36 border-b border-purple-700/30"
+      className="bg-[#D434FE]/5 py-10 md:py-24 text-white px-9 sm:px-12 md:px-16 lg:px-24 xl:px-36 border-b border-purple-700/30"
     >
       <div className="flex flex justify-between align-right mb-24">
         <div className="md:w-1/2 relative">
@@ -35,10 +35,7 @@ export default function Prizes() {
       </div>
       <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="w-full md:w-2/5 relative">
-          <img
-            src={success_target}
-            alt="target hit successfully"
-          />
+          <img src={success_target} alt="target hit successfully" />
           <img
             src={star_w}
             alt="white twinkling star"

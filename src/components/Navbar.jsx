@@ -15,19 +15,25 @@ export default function Navbar() {
   return (
     <nav className="pt-6 pb-2 border-b border-purple-700/40">
       <div className="flex justify-between px-10 sm:px-12 md:px-16 lg:px-24 xl:px-36">
-        <h1 className="font-clash+display text-white text-base md:text-3xl lg:text-4xl font-bold">
+        <Link
+          to={"/"}
+          className="font-clash+display text-white text-base md:text-3xl lg:text-4xl font-bold"
+        >
           get<span className="text-[#D434FE]">linked</span>
-        </h1>
+        </Link>
         <div className="hidden lg:flex w-1/2 justify-between items-center text-white text-base font-normal">
-          {links.map((link, index) => (
-            <Link
-              to={link.url}
-              className="inline-block hover:bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9] hover:text-transparent hover:bg-clip-text"
-              key={index}
-            >
-              {link.name}
-            </Link>
-          ))}
+          <ul className="flex justify-between gap-4">
+            {links.map((link, index) => (
+              <li key={index}>
+                <Link
+                  to={link.url}
+                  className="inline-block hover:bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9] hover:text-transparent hover:bg-clip-text"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
           <Button title={"Register"} link={true} />
 
           <button className="border-0 bg-transparent block md:hidden">

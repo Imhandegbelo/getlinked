@@ -18,7 +18,7 @@ export default function Hero() {
         <img
           src={pink_line}
           alt="pink line"
-          className="absolute right-16 top-10"
+          className="absolute w-28 md:w-52 lg:w-60 right-9 sm:right-[10%] md:right-16 top-5 md:top-10"
         />
         <img
           src={star_w}
@@ -33,20 +33,29 @@ export default function Hero() {
             <h2>
               Hackathon <span className="text-[#D434FE]">1.0</span>
             </h2>
-            <img src={chain} alt="chain" className="absolute h-12 lg:h-14 xl:h-16 -right-[5%] bottom-0" />
-            <img src={fire} alt="chain" className="absolute lg:w-12 xl:w-16 -right-[15%] bottom-[2%]" />
+            <img
+              src={chain}
+              alt="chain"
+              className="absolute h-8 md:h-12 lg:h-14 xl:h-16 right-[12%] bottom-[2%] lg:-right-[2%]"
+            />
+            <img
+              src={fire}
+              alt="chain"
+              className="absolute lg:w-12 xl:w-16 right-[5%] bottom-[2%] lg:-right-[12%]"
+            />
           </div>
           <p className="text-xs mx-12 md:mx-0 sm:text-sm md:text-base lg:text-xl">
             Participate in getlinked tech Hackathon 2023 stand a chance to win a
             Big prize
           </p>
-          <Button title="Register" className="" />
-          {/* </div> */}
+          <div className="flex justify-center md:justify-normal">
+            <Button title="Register" className="" />
+          </div>
           <Timer />
           <img
             src={star_g}
             alt="gray twinkling star"
-            className="absolute right-20 bottom-20 animate-[ping_1s_infinite]"
+            className="absolute w-4 md:w-5 right-20 bottom-20 animate-[ping_1s_infinite]"
           />
         </div>
         <div className="relative">

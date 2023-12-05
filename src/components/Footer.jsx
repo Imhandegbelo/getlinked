@@ -42,10 +42,20 @@ export default function Footer() {
             <Link to="/register">Register</Link>
             <div className="flex gap-2 lg:gap-4 items-center">
               <h5 className="text-[#D434FE]">Follow us</h5>
-              <img src={instagram} alt="instagram logo" />
-              <img src={twitter} alt="twitter logo" />
-              <img src={facebook} alt="facebook logo" />
-              <img src={linkedin} alt="linkedin logo" />
+              <ul className="flex justify-between items-center gap-2">
+                <li aria-label="instgram page">
+                  <img src={instagram} alt="instagram logo" />
+                </li>
+                <li aria-label="twitter page">
+                  <img src={twitter} alt="twitter logo" />
+                </li>
+                <li aria-label="facebook page">
+                  <img src={facebook} alt="facebook logo" />
+                </li>
+                <li aria-label="linkedin page">
+                  <img src={linkedin} alt="linkedin logo" />
+                </li>
+              </ul>
             </div>
             <img
               src={star_g}
@@ -56,11 +66,11 @@ export default function Footer() {
           <div className="flex flex-col gap-4 relative">
             <h4 className="text-[#D434FE] text-sm">Contact Us</h4>
             <div className="flex gap-4 items-center">
-              <img src={phone} alt="phone" className="w-5" />
+              <img src={phone} alt="phone" className="w-4" />
               <p className="text-xs">+234 6707653444</p>
             </div>
-            <div className="flex items-center gap-4">
-              <img src={location} alt="phone" className="w-5" />
+            <div className="flex items-start gap-4">
+              <img src={location} alt="phone" className="w-4" />
               <p className="text-xs">
                 27,Alara Street <br />
                 Yaba 100012 <br />

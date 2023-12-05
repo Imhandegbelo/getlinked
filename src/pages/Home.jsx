@@ -6,6 +6,7 @@ import FAQs from "../layout/FAQs";
 import Prizes from "../layout/Prizes";
 import Hero from "../layout/Hero";
 import Partners from "../layout/Partners";
+import Privacy from "../layout/Privacy";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <FAQs />
       <Prizes />
       <Partners />
+      <Privacy />
     </main>
   );
 };

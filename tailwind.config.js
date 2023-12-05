@@ -9,7 +9,7 @@ export default {
         "Unica+one": ["Unica One", "sans-serif"],
       },
       backgroundImage: {
-        premium: 'url("../src/assets/images/bg-premium.png")',
+        premium: 'url("../src/assets/svgs/bg-premium.svg")',
       },
     },
   },

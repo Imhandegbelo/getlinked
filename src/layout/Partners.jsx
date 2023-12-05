@@ -7,7 +7,7 @@ export default function Partners() {
   return (
     <section
       id="sponsors"
-      className="flex flex-col text-center text-white p-9 sm:p-12 md:p-16 lg:p-24 xl:p-36"
+      className="flex flex-col text-center text-white p-9 sm:p-12 md:p-16 lg:p-24 xl:p-36 border-b border-purple-700/30"
     >
       <h3 className="font-clash+display text-xl md:text-2xl lg:text-[2rem] lg:leading-[2.1rem] font-bold">
         Partners and Sponsors
