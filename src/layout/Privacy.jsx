@@ -1,5 +1,5 @@
 import list_item from "../assets/svgs/list-item.svg";
-import vector_lock from "../assets/images/Vectorlock.png";
+import vector_lock from "../assets/images/vectorlock.png";
 import star_g from "../assets/images/star_g.png";
 import star_p from "../assets/images/star_p.png";
 import star_pi from "../assets/images/star_pi.png";
