@@ -58,7 +58,7 @@ export default function Hero() {
             className="absolute w-4 md:w-5 right-20 bottom-20 animate-[ping_1s_infinite]"
           />
         </div>
-        <div className="relative">
+        <div className="relative overflow-x-clip">
           <img src={man_glasses} alt="man wearing vr glasses" className="" />
           <img
             src={starry_globe}
