@@ -6,22 +6,22 @@ export default function Navbar() {
   const location = useLocation();
   const { currentPath, setCurrentPath } = useState("/");
   const links = [
-    { name: "Timeline", url: "/#timeline" },
+    { name: "Timeline", url: "#timeline" },
     { name: "Overview", url: "/" },
-    { name: "FAQs", url: "/#faqs" },
+    { name: "FAQs", url: "#faqs" },
     { name: "Contact", url: "/contact" },
   ];
 
   return (
-    <nav className="pt-6 pb-2 border-b border-purple-700/40">
-      <div className="flex justify-between px-10 sm:px-12 md:px-16 lg:px-24 xl:px-36">
+    <nav className="container pt-6 border-b border-purple-700/40 mx-auto px-6">
+      <div className="flex justify-between">
         <Link
           to={"/"}
           className="font-clash+display text-white text-base md:text-3xl lg:text-4xl font-bold"
         >
           get<span className="text-[#D434FE]">linked</span>
         </Link>
-        <div className="hidden lg:flex w-1/2 justify-between items-center text-white text-base font-normal">
+        <div className="hidden lg:flex w-1/2 justify-between items-center text-white">
           <ul className="flex justify-between gap-4">
             {links.map((link, index) => (
               <li key={index}>

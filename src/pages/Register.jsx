@@ -94,10 +94,10 @@ const Register = () => {
             Please review your registration details before submitting
           </small>
           <div className="flex gap-4 pb-6 align-items-center">
-            <input type="checkbox" name="consent" className="" />
-            <small className="">
+            <input type="checkbox" id="agree" name="consent" className="" />
+            <label htmlFor="agree" className="">
               I agreed with the event terms and conditions and privacy policy
-            </small>
+            </label>
           </div>
           <div className="p-px rounded bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9]">
             <div className="rounded bg-slate-800">
