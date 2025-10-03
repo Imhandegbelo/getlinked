@@ -101,7 +101,7 @@ const Contact = () => {
           Let us know about it!
         </p>
         <form onSubmit={handleSubmit} className="mt-4 flex flex-col gap-6">
-          <Input placeholder="First Name" name="first name" />
+          <Input placeholder="First Name" name="first-name" />
           <Input placeholder="Email" name="email" />
           <textarea name="message" cols="30" rows="5" placeholder="Message" className="w-full bg-transparent border p-2 md:p-4 rounded placeholder-white" />
           <div className="p-px mx-auto rounded bg-gradient-to-r w-fit from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9]">

@@ -13,8 +13,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="container pt-6 border-b border-purple-700/40 mx-auto px-6">
-      <div className="flex justify-between">
+    <nav className="py-6 border-b border-purple-700/40 mx-auto px-6">
+      <div className="container flex justify-between items-center mx-auto">
         <Link
           to={"/"}
           className="font-clash+display text-white text-base md:text-3xl lg:text-4xl font-bold"
@@ -35,36 +35,6 @@ export default function Navbar() {
             ))}
           </ul>
           <Button title={"Register"} link={true} />
-
-          <button className="border-0 bg-transparent block md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="23"
-              height="23"
-              viewBox="0 0 23 23"
-              fill="none"
-            >
-              <circle
-                cx="11.5"
-                cy="11.5"
-                r="11"
-                stroke="url(#paint0_linear_181_74)"
-              />
-              <defs>
-                <linearGradient
-                  id="paint0_linear_181_74"
-                  x1="11.5"
-                  y1="0"
-                  x2="11.5"
-                  y2="23"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#903AFF" />
-                  <stop offset="1" stop-color="#FF26B9" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </button>
         </div>
         <button className="border-0 bg-transparent lg:hidden">
           <svg

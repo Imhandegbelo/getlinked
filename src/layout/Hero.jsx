@@ -10,7 +10,7 @@ import Timer from "../components/Timer";
 
 export default function Hero() {
   return (
-    <section className="md:ml-16 lg:ml-24 xl:ml-36 mt-9 sm:mt-12 md:mt-16 lg:mt-24 xl:mt-24 text-white border-b border-purple-700/30">
+    <section className="md:ml-1/6 lg:ml-2/4 xl:ml-3/6 mt-9 sm:mt-12 md:mt-16 lg:mt-24 text-white border-b border-purple-700/30 px-6 md:px-16 lg:px-20">
       <div className="flex justify-center md:justify-end mb-16 relative">
         <h1 className="text-base md:text-3xl lg:text-4xl mx-auto lg:mr-16 font-bold italic">
           Igniting a Revolution in HR Innovation

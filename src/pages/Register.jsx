@@ -1,4 +1,3 @@
-import React, { lazy } from "react";
 import designer from "../assets/images/3d-designer.png";
 import SuccessComponent from "../components/SuccessComponent";
 
@@ -25,27 +24,27 @@ const Register = () => {
   }
 
   return (
-    <div className="flex max-w-[1440px] px-20 py-10 mx-auto">
-      <div className="w-1/2 flex items-center">
+    <div className="flex max-w-[1440px] px-6 md:px-12 lg:px-20 py-10 mx-auto">
+      <div className="hidden md:flex w-full  items-center">
         <img src={designer} alt="A designer sipping coffea" className="" />
       </div>
-      <div className="flex flex-col gap-6 p-10 w-1/2 bg-slate-800/30 rounded-lg text-white shadow-md">
+      <div className="flex flex-col gap-6 p-10 w-full bg-slate-800/30 rounded-lg text-white shadow-md">
         <h3 className="text-[#D434FE] text-semibold text-[2rem]">Register</h3>
         <p className="text-sm">Be part of this movement!</p>
         <p className="text-2xl">CREATE YOUR ACCOUNT</p>
-        <form action="" method="get" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className="flex gap-2">
             <Input
-              placeholder={"Enter the name of your group"}
-              label={"Team's Name"}
+              placeholder="Enter the name of your group"
+              label="Team's Name"
             />
-            <Input placeholder={"Enter your phone number"} label={"Phone"} />
+            <Input placeholder="Enter your phone number" label="Phone" />
           </div>
           <div className="flex gap-2">
-            <Input placeholder={"Enter your email address"} label={"Email"} />
+            <Input placeholder="Enter your email address" label="Email" />
             <Input
-              placeholder={"What is your group project topic"}
-              label={"Project Topic"}
+              placeholder="What is your group project topic"
+              label="Project Topic"
             />
           </div>
           <div className="flex gap-2 my-2">
@@ -73,6 +72,7 @@ const Register = () => {
               <label htmlFor="category">Group Size</label>
               <select
                 name="size"
+                id="category"
                 className="w-full bg-transparent rounded p-4 text-sm border border-white"
               >
                 <option value="" className="bg-indigo-950">
