@@ -31,7 +31,7 @@ export default function Privacy() {
               className="absolute -top-5 right-[20%] md:right-[40%] w-2 md:w-auto animate-[ping_1s_infinite]"
             />
           </div>
-          <div className="py-3 px-4 md:py-10 md:px-16 mt-16 border rounded-[5px] border-[#D434FE] relative">
+          <div className="md:hidden lg:block py-3 px-4 md:py-10 md:px-16 mt-16 border rounded-[5px] border-[#D434FE] relative">
             <p className="text-center md:text-left text-xs md:text-sm leading-[216.4%]">
               At getlinked tech Hackathon 1.0, we value your privacy and are
               committed to protecting your personal information. This Privacy
@@ -105,6 +105,46 @@ export default function Privacy() {
           />
         </div>
       </div>
+      <div className="hidden md:block lg:hidden py-3 px-4 md:py-10 md:px-16 mt-16 border rounded-[5px] border-[#D434FE] relative">
+            <p className="text-center md:text-left text-xs md:text-sm leading-[216.4%]">
+              At getlinked tech Hackathon 1.0, we value your privacy and are
+              committed to protecting your personal information. This Privacy
+              Policy outlines how we collect, use, disclose, and safeguard your
+              data when you participate in our tech hackathon event. By
+              participating in our event, you consent to the practices described
+              in this policy.
+            </p>
+            <div className="">
+              <h4 className="font-bold text-[13px] md:text-base text-[#D434FE] font-base mt-6">
+                Licensing Policy
+              </h4>
+              <h5 className="text-xs md:text-sm font-bold leading-[216.4%]">
+                Here are terms of our Standard License:
+              </h5>
+            </div>
+            <div className="">
+              <div className="flex items-start gap-4 mt-6">
+                <img src={list_item} alt="list" />
+                <p className="text-xs md:text-sm m-0 leading-[216.4%]">
+                  The Standard License grants you a non-exclusive right to
+                  navigate and register for our event
+                </p>
+              </div>
+              <div className="flex items-start gap-4 mt-6 m-0">
+                <img src={list_item} alt="list" />
+                <p className="text-xs md:text-sm leading-[216.4%]">
+                  You are licensed to use the item available at any free source
+                  sites, for your project developement
+                </p>
+              </div>
+              <button className="font-base">Read More</button>
+            </div>
+            <img
+              src={star_pi}
+              alt="twinkling pink star"
+              className="absolute bottom-[30%] w-4 md:w-auto -left-[7%] md:-left-[10%] animate-[pulse_2s_infinite]"
+            />
+          </div>
     </section>
   );
 }

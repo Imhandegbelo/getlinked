@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className="font-Montserrat bg-[#100B20] text-white p-9 sm:p-12 md:px-16 lg:px-24 xl:px-36">
       <div className="flex flex-col gap-6 md:flex-row md:gap-16 relative">
-        <div className="w-full mmd:w-1/2 relative">
+        <div className="w-full md:w-1/2 relative">
           <h3 className="font-clash+display text-2xl sm:text-3xl md:text-4xl font-bold">
             get<span className="text-[#D434FE]">linked</span>
           </h3>
@@ -36,24 +36,40 @@ export default function Footer() {
         <div className="flex flex-col w-full md:flex-row gap-6 md:justify-between">
           <div className="grid gap-2 lg:gap-3 text-xs relative">
             <h4 className="text-[#D434FE] text-sm">Useful Links</h4>
-            <Link to="#">Overview</Link>
-            <Link to="#">Timeline</Link>
-            <Link to="#">FAQs</Link>
-            <Link to="/register">Register</Link>
+            <Link to="#" className="hover:text-[#D434FE]">
+              Overview
+            </Link>
+            <Link to="#" className="hover:text-[#D434FE]">
+              Timeline
+            </Link>
+            <Link to="#" className="hover:text-[#D434FE]">
+              FAQs
+            </Link>
+            <Link to="/register" className="hover:text-[#D434FE]">
+              Register
+            </Link>
             <div className="flex gap-2 lg:gap-4 items-center">
               <h5 className="text-[#D434FE]">Follow us</h5>
               <ul className="flex justify-between items-center gap-2">
                 <li aria-label="instgram page">
-                  <img src={instagram} alt="instagram logo" />
+                  <a href="#">
+                    <img src={instagram} alt="instagram logo" />
+                  </a>
                 </li>
                 <li aria-label="twitter page">
-                  <img src={twitter} alt="twitter logo" />
+                  <a href="#">
+                    <img src={twitter} alt="twitter logo" />
+                  </a>
                 </li>
                 <li aria-label="facebook page">
-                  <img src={facebook} alt="facebook logo" />
+                  <a href="">
+                    <img src={facebook} alt="facebook logo" />
+                  </a>
                 </li>
                 <li aria-label="linkedin page">
-                  <img src={linkedin} alt="linkedin logo" />
+                  <a href="#">
+                    <img src={linkedin} alt="linkedin logo" />
+                  </a>
                 </li>
               </ul>
             </div>
