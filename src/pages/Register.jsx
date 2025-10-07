@@ -51,7 +51,7 @@ const Register = () => {
         {showSuccess && <SuccessComponent />}
 
         <form onSubmit={handleSubmit}>
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row gap-2">
             <Input
               placeholder="Enter the name of your group"
               label="Team's Name"
@@ -68,7 +68,7 @@ const Register = () => {
               onChange={(e) => setForm({ ...form, phone: e.target.value })}
             />
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row gap-2">
             <Input
               placeholder="Enter your email address"
               label="Email"
@@ -85,7 +85,7 @@ const Register = () => {
               onChange={(e) => setForm({ ...form, topic: e.target.value })}
             />
           </div>
-          <div className="flex gap-2 my-2">
+          <div className="flex flex-col sm:flex-row gap-2 my-2">
             <div className="w-full">
               <label htmlFor="category">Category</label>
               <select

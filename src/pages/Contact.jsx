@@ -22,8 +22,9 @@ const Contact = () => {
   return (
     <div className="flex flex-col p-6 max-w-[1440px] mx-auto items-center text-white lg:py-12 lg:px-36">
       <div className="flex flex-col md:gap-4 w-full order-2 md:order-1 items-center">
-        
-        <h2 className="text-2xl font-semibold text-[#D434FE] hidden md:block">Get in touch</h2>
+        <h2 className="text-2xl font-semibold text-[#D434FE] hidden md:block">
+          Get in touch
+        </h2>
         <p className="text-base hidden md:block">
           Contact <br /> Information
         </p>
@@ -35,8 +36,7 @@ const Contact = () => {
           we are open from Monday-Friday <br />
           08:00am - 05:00pm
         </p>
-        
-        
+
         <p className="text-base text-[#D434FE]">Share on</p>
         <div className="flex gap-4 items-center">
           <svg
@@ -103,7 +103,13 @@ const Contact = () => {
         <form onSubmit={handleSubmit} className="mt-4 flex flex-col gap-6">
           <Input placeholder="First Name" name="first-name" />
           <Input placeholder="Email" name="email" />
-          <textarea name="message" cols="30" rows="5" placeholder="Message" className="w-full bg-transparent border p-2 md:p-4 rounded placeholder-white" />
+          <textarea
+            name="message"
+            cols="30"
+            rows="5"
+            placeholder="Message"
+            className="w-full bg-transparent border p-2 md:p-4 rounded placeholder-white"
+          />
           <div className="p-px mx-auto rounded bg-gradient-to-r w-fit from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9]">
             <div className="rounded bg-slate-800">
               <button
