@@ -1,26 +1,42 @@
+import { useState } from "react";
 import designer from "../assets/images/3d-designer.png";
 import SuccessComponent from "../components/SuccessComponent";
+import Input from "../components/Input";
 
 const Register = () => {
-  function Input({ placeholder, label, name }) {
-    return (
-      <div className="flex flex-col gap-2 py-2 w-full">
-        <label htmlFor={name} className="text-sm">
-          {label}
-        </label>
-        <input
-          required
-          type="text"
-          name={name}
-          className="text-sm p-4 w-1/2 border border-white rounded w-full bg-transparent"
-          placeholder={placeholder}
-        />
-      </div>
-    );
+  const [form, setForm] = useState({
+    teamName: "",
+    phone: "",
+    email: "",
+    topic: "",
+    category: "",
+    size: "",
+    consent: false,
+  });
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  function validateForm() {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^[0123456789]+$/;
+    if (!form.teamName.trim()) return false;
+    if (!form.phone.trim() || !phoneRegex.test(form.phone)) return false;
+    if (!form.email.trim() || !emailRegex.test(form.email)) return false;
+    if (!form.topic.trim()) return false;
+    if (!form.category) return false;
+    if (!form.size) return false;
+    if (!form.consent) return false;
+    return true;
   }
 
   function handleSubmit(event) {
     event.preventDefault();
+    console.log({ ...form });
+    if (validateForm()) {
+      setShowSuccess(true);
+    } else {
+      setShowSuccess(false);
+      alert("Please fill all fields correctly and agree to the terms.");
+    }
   }
 
   return (
@@ -32,19 +48,41 @@ const Register = () => {
         <h3 className="text-[#D434FE] text-semibold text-[2rem]">Register</h3>
         <p className="text-sm">Be part of this movement!</p>
         <p className="text-2xl">CREATE YOUR ACCOUNT</p>
+        {showSuccess && <SuccessComponent />}
+
         <form onSubmit={handleSubmit}>
           <div className="flex gap-2">
             <Input
               placeholder="Enter the name of your group"
               label="Team's Name"
+              id="teamName"
+              value={form.teamName}
+              onChange={(e) => setForm({ ...form, teamName: e.target.value })}
             />
-            <Input placeholder="Enter your phone number" label="Phone" />
+            <Input
+              placeholder="Enter your phone number"
+              label="Phone"
+              type="tel"
+              id="phone"
+              value={form.phone}
+              onChange={(e) => setForm({ ...form, phone: e.target.value })}
+            />
           </div>
           <div className="flex gap-2">
-            <Input placeholder="Enter your email address" label="Email" />
+            <Input
+              placeholder="Enter your email address"
+              label="Email"
+              type="email"
+              id="email"
+              value={form.email}
+              onChange={(e) => setForm({ ...form, email: e.target.value })}
+            />
             <Input
               placeholder="What is your group project topic"
               label="Project Topic"
+              id="topic"
+              value={form.topic}
+              onChange={(e) => setForm({ ...form, topic: e.target.value })}
             />
           </div>
           <div className="flex gap-2 my-2">
@@ -52,6 +90,8 @@ const Register = () => {
               <label htmlFor="category">Category</label>
               <select
                 name="category"
+                value={form.category}
+                onChange={(e) => setForm({ ...form, category: e.target.value })}
                 className="w-full bg-transparent rounded p-4 text-sm border border-white"
               >
                 <option value="" className="bg-indigo-950">
@@ -73,6 +113,8 @@ const Register = () => {
               <select
                 name="size"
                 id="category"
+                value={form.size}
+                onChange={(e) => setForm({ ...form, size: e.target.value })}
                 className="w-full bg-transparent rounded p-4 text-sm border border-white"
               >
                 <option value="" className="bg-indigo-950">
@@ -94,7 +136,14 @@ const Register = () => {
             Please review your registration details before submitting
           </small>
           <div className="flex gap-4 pb-6 align-items-center">
-            <input type="checkbox" id="agree" name="consent" className="" />
+            <input
+              type="checkbox"
+              id="agree"
+              name="consent"
+              checked={form.consent}
+              onChange={(e) => setForm({ ...form, consent: e.target.checked })}
+              className=""
+            />
             <label htmlFor="agree" className="">
               I agreed with the event terms and conditions and privacy policy
             </label>
@@ -102,7 +151,7 @@ const Register = () => {
           <div className="p-px rounded bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9]">
             <div className="rounded bg-slate-800">
               <button
-                onClick={console.log("clicked")}
+                type="submit"
                 className={`w-full py-3 px-4 transition transition-all font-bold bg-gradient-to-r from-[#903AFF] via-[#D434FE] via[#FF26B9] to-[#FE34B9] hover:bg-none`}
               >
                 Register Now
